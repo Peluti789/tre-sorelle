@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tre Sorelle - Cheesecakes Artesanales</title>
+    <!-- Fuentes Elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo-container">
+                <!-- SVG de las 3 flores con Slogan en Español -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 65" class="logo-svg">
+                    <!-- Tallos -->
+                    <path d="M80,25 Q83,32 80,38" stroke="#7A8B61" fill="none" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M100,25 Q97,32 100,38" stroke="#7A8B61" fill="none" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M90,28 L90,42" stroke="#7A8B61" fill="none" stroke-width="1.8" stroke-linecap="round"/>
+                    
+                    <!-- Girasol (Izquierda) -->
+                    <circle cx="80" cy="22" r="3.5" fill="#5A4034"/>
+                    <circle cx="80" cy="22" r="6" fill="none" stroke="#D4A017" stroke-width="2" stroke-dasharray="2,1"/>
+                    
+                    <!-- Margarita (Centro/Arriba) -->
+                    <circle cx="90" cy="18" r="2.5" fill="#D8B13C"/>
+                    <circle cx="90" cy="18" r="5" fill="none" stroke="#F8F7F2" stroke-width="2" stroke-dasharray="1.8,1"/>
+                    
+                    <!-- Rosa (Derecha) -->
+                    <circle cx="100" cy="22" r="4.5" fill="#C97A84"/>
+                    <path d="M98,21 Q100,19 102,21 Q100,24 98,21" fill="none" stroke="#FFFFFF" stroke-width="0.8"/>
+
+                    <!-- Tipografía del Logo -->
+                    <text x="90" y="52" text-anchor="middle" font-family="'Playfair Display', serif" font-size="13" font-weight="700" fill="#5A4034" letter-spacing="2">TRE SORELLE</text>
+                    <text x="90" y="60" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="6" font-weight="300" fill="#C8A46B" letter-spacing="1">CHEESECAKES ARTESANALES</text>
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#nosotros">Nuestra Historia</a></li>
+                <li><a href="#contacto" class="btn-nav">Hacer Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Portada -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="subtitle">Repostería de Especialidad</span>
+            <h1>Cheesecakes Artesanales</h1>
+            <p>Especialistas en cheesecakes fríos de gelatina. Creados diariamente con ingredientes frescos, pasión y el cariño de nuestra familia.</p>
+            <div class="hero-buttons">
+                <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+                <a href="#nosotros" class="btn btn-secondary">Conocer la Historia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section id="catalogo" class="catalog-section">
+        <div class="section-title">
+            <span>Nuestras Creaciones</span>
+            <h2>Sabores Exclusivos</h2>
+            <div class="gold-line"></div>
+        </div>
+
+        <div class="catalog-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img">
+                    <span class="badge">Frío / Gelatina</span>
+                    <img src="assets/cheesecakes/frutos-rojos.jpg" alt="Cheesecake Frutos Rojos">
+                </div>
+                <div class="card-body">
+                    <h3>Frutos Rojos Silvestres</h3>
+                    <p>Suave gelatina artesanal de frambuesa y arándanos sobre cremosa mousse de queso.</p>
+                    <div class="card-footer">
+                        <span class="price">$18.00</span>
+                        <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Cheesecake%20de%20Frutos%20Rojos" target="_blank" class="btn-card">Pedir por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img">
+                    <span class="badge">Frío / Gelatina</span>
+                    <img src="assets/cheesecakes/maracuya.jpg" alt="Cheesecake Maracuyá">
+                </div>
+                <div class="card-body">
+                    <h3>Maracuyá Tropical</h3>
+                    <p>Brillante cobertura de gelatina de maracuyá natural sobre una crujiente base de galleta.</p>
+                    <div class="card-footer">
+                        <span class="price">$18.00</span>
+                        <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Cheesecake%20de%20Maracuy%C3%A1" target="_blank" class="btn-card">Pedir por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-img">
+                    <span class="badge">Especial</span>
+                    <img src="assets/cheesecakes/oreo.jpg" alt="Cheesecake Oreo">
+                </div>
+                <div class="card-body">
+                    <h3>Oreo Cream Supreme</h3>
+                    <p>Capas intercaladas de crema ligera de queso y galleta Oreo molida con topping de chocolate.</p>
+                    <div class="card-footer">
+                        <span class="price">$20.00</span>
+                        <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20el%20Cheesecake%20de%20Oreo" target="_blank" class="btn-card">Pedir por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros / Historia -->
+    <section id="nosotros" class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <span class="subtitle">Tres hermanas, una misma pasión</span>
+                <h2>Inspirados en la familia</h2>
+                <p>Tre Sorelle nace del amor por la repostería hecha en casa con calidad profesional. Inspirado en tres personalidades únicas —representadas sutilmente en nuestro logo por el girasol, la margarita y la rosa—, cada postre está pensado para acompañar momentos especiales.</p>
+                <p>Nuestra especialidad son los <strong>cheesecakes fríos elaborados con gelatina natural</strong>, ofreciendo una textura suave, refrescante y con la dulzura justa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Tre Sorelle. Todos los derechos reservados. | Hecho con amor para compartir.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
