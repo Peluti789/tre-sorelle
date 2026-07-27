@@ -1,4 +1,14 @@
 :root {
+    --cream: #FAF4EE; /* Un crema un poco más claro para dar luz */
+    --white: #FFFFFF;
+    --gold: #C8A46B;
+    --brown: #3E2B23; /* Café más oscuro para mejor lectura */
+    --green: #7A8B61;
+    --pink: #F7D7D7;
+    --gray: #555555; /* Gris más oscuro para las descripciones */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Poppins', sans-serif;
+}
     --cream: #FFF8F3;
     --white: #FFFFFF;
     --gold: #C8A46B;
@@ -195,6 +205,13 @@ header {
 }
 
 .card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #EBE1D8; /* Borde sutil para separar del fondo */
+    box-shadow: 0 12px 30px rgba(62, 43, 35, 0.08); /* Sombra más definida */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
     background: var(--white);
     border-radius: 15px;
     overflow: hidden;
