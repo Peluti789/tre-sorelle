@@ -307,3 +307,73 @@ footer {
     color: var(--cream);
     font-size: 0.85rem;
 }
+
+/* =========================================
+   DISEÑO RESPONSIVE (MÓVILES Y TABLETS)
+   ========================================= */
+@media (max-width: 768px) {
+    /* Navegación */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .logo-svg {
+        width: 180px; /* Logo más pequeño para que no estorbe */
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .btn-nav {
+        padding: 6px 15px;
+    }
+
+    /* Portada (Hero) */
+    .hero {
+        padding-top: 100px; /* Espacio para el menú apilado */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Título más pequeño para que no se corte */
+    }
+    
+    .hero p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .btn {
+        width: 100%; /* Botones de lado a lado para tocarlos fácil */
+    }
+
+    /* Catálogo y Nosotros */
+    .catalog-section, .about-section {
+        margin: 40px auto;
+        padding: 40px 20px;
+    }
+    
+    .section-title h2, .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .catalog-grid {
+        grid-template-columns: 1fr; /* Tarjetas en una sola columna */
+        gap: 25px;
+    }
+}
